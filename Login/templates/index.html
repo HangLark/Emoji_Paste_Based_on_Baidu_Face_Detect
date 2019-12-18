@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Aimoji</title>
+    <link rel="icon" href="http://212.64.48.72:8000/src/logo.png" type="image/x-icon"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        .fakeimg {
+            height: 200px;
+            background: #aaa;
+        }
+    </style>
+    <style>
+        .carousel-item img{
+            width: 100%;
+            height:auto;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <a class="navbar-brand" href="/">Aimoji</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/cloud/1">照片云盘</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/demonstrate">效果演示</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/about">关于</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="http://212.64.48.72:8000/src/c1.JPG" alt="Los Angeles" width="1100" height="500">
+            <div class="carousel-caption">
+                <h3></h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="http://212.64.48.72:8000/src/c1.JPG" alt="Chicago" width="1100" height="500">
+            <div class="carousel-caption">
+                <h3></h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="http://212.64.48.72:8000/src/c1.JPG" alt="New York" width="1100" height="500">
+            <div class="carousel-caption">
+                <h3></h3>
+                <p></p>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
+</div>
+
+
+<div class="container" style="margin-top:30px">
+    <div class="row">
+        <div class="col-sm-4">
+            <button type="button" class="btn btn-success btn-block" onclick="go()">
+                <span class="spinner-grow spinner-grow-sm"></span>
+                点击下载 Aimoji APK
+            </button>
+            <script>
+                function go(){
+                    window.open('http://212.64.48.72:8000/Aimoji.apk')
+                }
+            </script>
+            <h2>开发小组</h2>
+            <div class="divider"></div>
+            <hr class="simple" color="#6f5499" />
+                <p>尹航 2017141471074<br>宋俐潼 2017141222035<br>苏昌盛 2017141231170<br>王艺瑾 2017141463228</p>
+            <h3>相关链接</h3>
+            <p></p>
+            <ul class="nav nav-pills flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://ai.baidu.com/" target="_blank">百度AI开放平台</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.djangoproject.com/" target="_blank">Django</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://cloud.tencent.com/?fromSource=gwzcw.2212127.2212127.2212127&utm_medium=cpd&utm_id=gwzcw.2212127.2212127.2212127" target="_blank">腾讯云</a>
+                </li>
+            </ul>
+            <hr class="d-sm-none">
+        </div>
+        <div class="col-sm-8">
+            <h2>Aimoji简介</h2>
+            <h6>基于人脸识别、手势识别的趣味贴图软件</h6>
+            <img src="http://212.64.48.72:8000/src/full-logo.png" width="300" height=auto>
+            <p>社交媒体的使用大家大多是在手机上进行的。所以，最基本的，我们要开发移动平台的应用程序。由于Android平台相比iOS平台的开发成本较低，且组员较为熟悉Java语言。所以，我们选择Android平台的应用程序。要在手机上实现拍照、表情识别、emoji覆盖等一系列的自动化操作。直接提供给用户处理好的照片，也可以根据用户的需要进行进一步的美化。最后，提供给用户主流社交媒体的用户分享接口，让用户最大程度的分享、利用生成的照片，并且能够保存到本地。尽量提供一站式的服务。</p>
+            <br>
+            <div class="divider"></div>
+            <hr class="simple" color="#6f5499" />
+            <h2>特点</h2>
+            <h5>三大特色功能</h5>
+            <div class="container mt-3">
+                <div class="media border p-3">
+                <img src="http://212.64.48.72:8000/src/face-gesture.JPG" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:100px;">
+                <div class="media-body">
+                    <h4>手势表情双识别</h4>
+                    <p>即可覆盖面部，也可覆盖手势</p>
+                    <button type="button" class="btn btn-info btn-block" onclick="demo()">
+                        <span class="spinner-grow spinner-grow-sm"></span>
+                        点击查看demo
+                    </button>
+            <script>
+                function demo(){
+                    window.location.href="http://212.64.48.72/demonstrate"
+                }
+            </script>
+                </div>
+              </div>
+            </div>
+            <div class="container mt-3">
+                <div class="media border p-3">
+                <img src="http://212.64.48.72:8000/src/cloud.JPG" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:100px;">
+                <div class="media-body">
+                    <h4>照片云盘功能</h4>
+                    <p>可跨设备随时查看您的照片</p>
+                    <button type="button" class="btn btn-info btn-block" onclick="cloud()">
+                        <span class="spinner-grow spinner-grow-sm"></span>
+                        点击进入照片云盘
+                    </button>
+            <script>
+                function cloud(){
+                    window.location.href="http://212.64.48.72/cloud/1"
+                }
+            </script>
+                </div>
+              </div>
+            </div>
+            <div class="container mt-3">
+                <div class="media border p-3">
+                <img src="http://212.64.48.72:8000/src/android-web.JPG" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:100px;">
+                <div class="media-body">
+                    <h4>安卓与Web双平台</h4>
+                    <p>你可以在安卓手机上使用，也可以在Web端体验</p>
+                    <button type="button" class="btn btn-info btn-block" onclick="web()">
+                        <span class="spinner-grow spinner-grow-sm"></span>
+                        点击体验Web端
+                    </button>
+            <script>
+                function web(){
+                    window.location.href="http://212.64.48.72/demonstrate"
+                }
+            </script>
+                </div>
+              </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+    <h3>Aimoji</h3>
+    <p>四川大学软件学院</p>
+    <p>Powered by cloud.tencent.com</p>
+</div>
+
+</body>
+</html>

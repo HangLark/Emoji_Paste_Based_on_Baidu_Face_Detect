@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Aimoji 功能演示</title>
+    <link rel="icon" href="http://212.64.48.72:8000/src/logo.png" type="image/x-icon"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <a class="navbar-brand" href="/">Aimoji</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/cloud/1" target="_blank">照片云盘</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="/demonstrate">效果演示</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/about">关于</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 id="1">上传演示图片</h1>
+        <form action="/detect/" method="POST" enctype="multipart/form-data">
+        <div style="position: relative">
+            <input type="file" name="img"/>
+        </div>
+            <h1>
+            </h1>
+        <input type="submit" value="上传并贴图" />
+        </form>
+    </div>
+</div>
+<div class="jumbotron text-center" style="margin-bottom:0">
+    <h3>Aimoji</h3>
+    <p>四川大学软件学院</p>
+    <p>Powered by cloud.tencent.com</p>
+</div>
+</body>
+</html>
